@@ -44,14 +44,7 @@ function App() {
   var result2=0;
 
   const {data, loading, error}=useFetch(`${process.env.REACT_APP_BACKEND}`);
-
-
-  
-
-  
-
-  if(loading) return <h1>LOADING...</h1>;
-
+  if(loading) return <h1 className=" w-full h-full">LOADING...</h1>;
   if(error) console.log(error);
   
 
