@@ -21,7 +21,7 @@ import micIcon from './images/mic_icon.png';
 import searchBar from './images/search_bar.png';
 import Header from './components/Header';
 import AboutUs from './components/AboutUs';
-
+import Preloader from './components/Preloader';
 
 
 
@@ -44,7 +44,8 @@ function App() {
   var result2=0;
 
   const {data, loading, error}=useFetch(`${process.env.REACT_APP_BACKEND}`);
-  if(loading) return <h1 className=" w-full h-full">LOADING...</h1>;
+  if(loading) 
+  return <Preloader/>;
   if(error) console.log(error);
   
 
