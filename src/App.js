@@ -40,7 +40,8 @@ function App() {
   var result2=0;
 
   const {data, loading, error}=useFetch(`${process.env.REACT_APP_BACKEND}`);
-  if(loading) return <Preloader/>;
+  if(loading)
+   return <Preloader/>;
   if(error) console.log(error);
   
 
