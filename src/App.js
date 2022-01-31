@@ -45,7 +45,7 @@ function App() {
   if(error) console.log(error);
   
 
-  function Map(){
+  function Map(){ //function map
     
       return(
         <GoogleMap
