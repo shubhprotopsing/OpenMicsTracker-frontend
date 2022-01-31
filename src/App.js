@@ -22,11 +22,10 @@ import searchBar from './images/search_bar.png';
 import Header from './components/Header';
 import AboutUs from './components/AboutUs';
 import Preloader from './components/Preloader';
+<<<<<<< HEAD
+=======
 
-
-
-
-  
+>>>>>>> 1b45ee949670cdc9cdd2773e90414a2854865c95
 
 
 function App() {
@@ -44,12 +43,17 @@ function App() {
   var result2=0;
 
   const {data, loading, error}=useFetch(`${process.env.REACT_APP_BACKEND}`);
+<<<<<<< HEAD
   if(loading) 
   return <Preloader/>;
+=======
+  if(loading)
+   return <Preloader/>;
+>>>>>>> 1b45ee949670cdc9cdd2773e90414a2854865c95
   if(error) console.log(error);
   
 
-  function Map(){
+  function Map(){ //function map
     
       return(
         <GoogleMap
